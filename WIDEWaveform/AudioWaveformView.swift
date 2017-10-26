@@ -108,7 +108,7 @@ fileprivate class AudioWaveformContainerView : UIView {
 public class AudioWaveformView: UIView {
     private var foregroundView = AudioWaveformContainerView()
     private var backgroundView = AudioWaveformContainerView()
-    var foregroundClipingView: UIView!
+    public var foregroundClipingView: UIView!
 	var peakHeight:CGFloat = 12 {
 		didSet {
 			foregroundView.peakHeight = peakHeight

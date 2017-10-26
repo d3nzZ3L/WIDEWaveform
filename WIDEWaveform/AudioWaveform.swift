@@ -62,7 +62,7 @@ public final class AudioWaveform: Equatable {
         self.init(samples: result, peak: 31)
     }
     
-    func makeBitstream() -> Data {
+    public func makeBitstream() -> Data {
         let numSamples = self.samples.count / 2
         let bitstreamLength = (numSamples * 5) / 8 + (((numSamples * 5) % 8) == 0 ? 0 : 1)
         var result = Data()
