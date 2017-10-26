@@ -35,15 +35,15 @@ private func setBits(data: UnsafeMutableRawPointer, bitOffset: Int, numBits: Int
 }
 
 public final class AudioWaveform: Equatable {
-    let samples: Data
-    let peak: Int32
+    public let samples: Data
+    public let peak: Int32
     
     init(samples: Data, peak: Int32) {
         self.samples = samples
         self.peak = peak
     }
     
-    convenience init(bitstream: Data, bitsPerSample: Int) {
+    convenience public init(bitstream: Data, bitsPerSample: Int) {
         let numSamples = Int(Float(bitstream.count * 8) / Float(bitsPerSample))
         var result = Data()
         result.count = numSamples * 2

@@ -116,14 +116,14 @@ public class AudioWaveformView: UIView {
 		}
 	}
 	
-	var waveform:AudioWaveform? {
+	public var waveform:AudioWaveform? {
 		didSet {
 			foregroundView._waveform = waveform
 			backgroundView._waveform = waveform
 		}
 	}
 	
-	override init(frame: CGRect) {
+	public override init(frame: CGRect) {
 		super.init(frame: frame)
 		foregroundView = AudioWaveformContainerView(frame: self.bounds)
 		backgroundView = AudioWaveformContainerView(frame: self.bounds)
@@ -142,13 +142,13 @@ public class AudioWaveformView: UIView {
 		super.init(coder: aDecoder)
 	}
 	
-	func setPeakHeight(peakHeight: CGFloat) {
+	public func setPeakHeight(peakHeight: CGFloat) {
 		self.peakHeight = peakHeight
 		self.foregroundView.peakHeight = peakHeight
 		self.backgroundView.peakHeight = peakHeight
 	}
 	
-    func set(foregroundColor: UIColor, backgroundColor: UIColor) {
+   public func set(foregroundColor: UIColor, backgroundColor: UIColor) {
         self.foregroundView.color = foregroundColor
         self.backgroundView.color = backgroundColor
     }
