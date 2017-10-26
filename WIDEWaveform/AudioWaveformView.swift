@@ -105,7 +105,7 @@ fileprivate class AudioWaveformContainerView : UIView {
 	}
 }
 
-class AudioWaveformView: UIView {
+public class AudioWaveformView: UIView {
     private var foregroundView = AudioWaveformContainerView()
     private var backgroundView = AudioWaveformContainerView()
     var foregroundClipingView: UIView!
@@ -138,7 +138,7 @@ class AudioWaveformView: UIView {
 		backgroundView.peakHeight = peakHeight
 	}
 	
-	required init?(coder aDecoder: NSCoder) {
+	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 	}
 	
@@ -153,7 +153,7 @@ class AudioWaveformView: UIView {
         self.backgroundView.color = backgroundColor
     }
 	
-	override func layoutSubviews() {
+	override public func layoutSubviews() {
 		super.layoutSubviews()
 	}
 }

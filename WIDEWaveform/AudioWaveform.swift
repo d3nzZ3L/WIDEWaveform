@@ -8,8 +8,6 @@
 
 import UIKit
 
-import Foundation
-
 private func getBits(data: UnsafeRawPointer, length: Int, bitOffset: Int, numBits: Int) -> Int32 {
     let normalizedNumBits = Int(pow(2.0, Double(numBits))) - 1
     let byteOffset = bitOffset / 8
@@ -36,7 +34,7 @@ private func setBits(data: UnsafeMutableRawPointer, bitOffset: Int, numBits: Int
     normalizedData.assumingMemoryBound(to: Int32.self).pointee |= value << Int32(normalizedBitOffset)
 }
 
-final class AudioWaveform: Equatable {
+public final class AudioWaveform: Equatable {
     let samples: Data
     let peak: Int32
     
@@ -84,7 +82,7 @@ final class AudioWaveform: Equatable {
         return result
     }
     
-    static func ==(lhs: AudioWaveform, rhs: AudioWaveform) -> Bool {
+	public static func ==(lhs: AudioWaveform, rhs: AudioWaveform) -> Bool {
         return lhs.peak == rhs.peak && lhs.samples == rhs.samples
     }
 }
