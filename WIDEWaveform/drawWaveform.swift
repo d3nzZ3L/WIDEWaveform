@@ -1,17 +1,16 @@
 //
-//  Draw2dWaveform.swift
-//  Beatmaker
+//  DrawWaveform.swift
+//  WIDE
 //
-//  Created by Miguel Saldana on 10/17/16.
-//  Copyright © 2016 Miguel Saldana. All rights reserved.
+//  Created by Miguel Saldana on 10/12/17.
+//  Copyright © 2017 Denis Borodavchenko. All rights reserved.
 //
 
 import Foundation
 import UIKit
 import Accelerate
+
 class DrawWaveform: UIView {
-    
-    
     override func draw(_ rect: CGRect) {
         self.convertToPoints()
         var f = 0
