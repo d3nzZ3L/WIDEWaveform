@@ -8,16 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4A6E00301FA1568B007CAD06 /* WIDEWaveform.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A6E002E1FA1568B007CAD06 /* WIDEWaveform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A6E00381FA156C5007CAD06 /* AudioWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E00361FA156C5007CAD06 /* AudioWaveformView.swift */; };
-		4A6E00391FA156C5007CAD06 /* AudioWaveform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E00371FA156C5007CAD06 /* AudioWaveform.swift */; };
+		4AA372941FDF27C90031470F /* DrawWaveform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA372931FDF27C90031470F /* DrawWaveform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A6E002B1FA1568B007CAD06 /* WIDEWaveform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIDEWaveform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6E002E1FA1568B007CAD06 /* WIDEWaveform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WIDEWaveform.h; sourceTree = "<group>"; };
 		4A6E002F1FA1568B007CAD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A6E00361FA156C5007CAD06 /* AudioWaveformView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioWaveformView.swift; sourceTree = "<group>"; };
-		4A6E00371FA156C5007CAD06 /* AudioWaveform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioWaveform.swift; sourceTree = "<group>"; };
+		4AA372931FDF27C90031470F /* DrawWaveform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawWaveform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +48,7 @@
 		4A6E002D1FA1568B007CAD06 /* WIDEWaveform */ = {
 			isa = PBXGroup;
 			children = (
-				4A6E00371FA156C5007CAD06 /* AudioWaveform.swift */,
-				4A6E00361FA156C5007CAD06 /* AudioWaveformView.swift */,
+				4AA372931FDF27C90031470F /* DrawWaveform.swift */,
 				4A6E002E1FA1568B007CAD06 /* WIDEWaveform.h */,
 				4A6E002F1FA1568B007CAD06 /* Info.plist */,
 			);
@@ -101,7 +98,7 @@
 				TargetAttributes = {
 					4A6E002A1FA1568B007CAD06 = {
 						CreatedOnToolsVersion = 9.0.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,8 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A6E00381FA156C5007CAD06 /* AudioWaveformView.swift in Sources */,
-				4A6E00391FA156C5007CAD06 /* AudioWaveform.swift in Sources */,
+				4AA372941FDF27C90031470F /* DrawWaveform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
